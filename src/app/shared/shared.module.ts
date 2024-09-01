@@ -8,10 +8,13 @@ import { MainMenuComponent } from './components/main-menu/main-menu.component';
 import { SideMenuComponent } from './components/side-menu/side-menu.component';
 import { ModalComponent } from './components/modal-dialog/modal-dialog.component';
 
+import { ButtonsModule } from '@progress/kendo-angular-buttons';
+
 @NgModule({
     imports: [
         FormsModule,
         RouterModule,
+        ButtonsModule,
     ],
     exports: [
         FormsModule,
@@ -19,6 +22,7 @@ import { ModalComponent } from './components/modal-dialog/modal-dialog.component
         SideMenuComponent,
         PresetFilterComponent,
         ModalComponent,
+        ButtonsModule,
     ],
     declarations: [
         MainMenuComponent,
